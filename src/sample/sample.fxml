@@ -1,0 +1,17 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ListView?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10" style="-fx-padding: 10 10 10 10;">
+
+    <Button fx:id="btnConnect" GridPane.columnIndex="0" GridPane.rowIndex="0" onAction="#connectToDB">Connect to DB</Button>
+
+
+    <TextField fx:id="tfData" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.columnSpan="2"></TextField>
+    <Button fx:id="btnSaveToDB" GridPane.columnIndex="1" GridPane.rowIndex="2" onAction="#saveDataToDB" disable="true">Save to DB</Button>
+    <ListView fx:id="lvDBData" GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.columnSpan="2"></ListView>
+</GridPane>
